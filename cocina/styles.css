@@ -1,0 +1,164 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+body {
+    
+    font-family: Arial, sans-serif;
+    
+}
+/***********************************************************************************************/
+/*
+
+.home-section .container{
+    display: inline-block;
+    background-color: #e9e0e0;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 18px;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.table caption {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+    color: #000;
+} 
+
+.table tr {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white);
+    color: #000;
+}
+
+.table th, .table td {
+    font-size: 16px; 
+    padding: 8px;
+    text-align: center;
+}
+
+.table thead th{ 
+    text-transform: uppercase;
+    background-color: var(--color-default);
+    color: #fff;
+}
+ 
+.table tbody tr:hover {
+    /*background-color: rgba(255, 255, 255, 0.2);
+    background-color:var(--color-grisxd);
+    color: var(--color-default);
+}
+*/
+
+/******************************************************/
+
+
+
+.container {
+   
+    flex-grow: 1;
+   
+    padding: 10px;
+
+    border-radius: 8px;
+    min-height: 80vh;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    
+}
+
+th, td {
+    padding: 0.5rem 0.3rem;
+    text-align: center;
+
+}
+
+th {
+    background-color: #020202;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+tr {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    
+}
+
+caption{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+    color: #080808;
+}
+
+/******************************************************/
+
+
+/* Estilo para el botón de edición */
+
+
+
+/* styles.css */
+/* Estilo para el botón de cancelar */
+.cancel-button {
+    background-color: #dc3545; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 8px 12px; /* Espacio interno */
+    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+    color: #fff; /* Color del texto */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.cancel-button:hover {
+    background-color: #c82333; /* Color de fondo al pasar el ratón por encima */
+}
+
+
+.sidebar-container {
+   
+    
+    
+    width: auto; /* Ancho del sidebar */
+    margin-right: 40px; /* Espacio entre los dos divs */
+    
+}
+
+
+
+
+
+

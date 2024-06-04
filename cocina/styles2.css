@@ -1,0 +1,261 @@
+:root{
+    --clr:#222327;
+
+    --estilo: linear-gradient(to left bottom, #222327, #262b3b, #2a334f, #2e3a64, #32427a);
+
+    --blanco:#fff;
+    --color_body:#e4e9f7;
+}
+
+body{
+    background: var(--color_body);
+    
+
+}
+
+.principal{
+    display: flex;
+    justify-content:flex-start;
+   /* align-items: center; */
+    
+}
+
+
+.navegacion{
+    position: relative;
+    width: 114px;
+    height: 480px;
+    background-color: var(--clr);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 10px;
+    min-height: 70vh;
+
+
+}
+
+
+
+
+.navegacion ul{
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacion ul li{
+    position: relative;
+    list-style:none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navegacion ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navegacion ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #fff;
+}
+
+
+.navegacion ul li.active a .icon{
+    transform: translateX(55px);
+}
+
+.navegacion ul li a .texto{
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.75em;
+    
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.navegacion ul li.active a .texto{
+    opacity: 1;
+
+    transform: translateX(-9px);
+}
+
+.indicator{
+position: absolute;
+width: 58px;
+height: 58px;
+background: rgb(106, 208, 106);
+right: -30%;
+border-radius: 50%;
+border: 6px solid var(--color_body);
+transition: 0.5s;
+}
+
+
+.indicator::before{
+    content: '';
+    position: absolute;
+    
+    left: 24%;
+    top:-23px;
+
+    width: 20px;
+    height: 20px;
+    background: transparent;
+
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 3px  0 0 var(--color_body);
+}
+
+
+.indicator::after{
+    content: '';
+    position: absolute;
+    
+    left: 24%;
+    bottom:-23px;
+
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    
+    box-shadow: 10px 0  0 0 var(--color_body);;
+}
+
+.navegacion ul li:nth-child(1).active ~ .indicator{
+    transform: translateY(calc(70px * 0));
+}
+
+.navegacion ul li:nth-child(2).active ~ .indicator{
+    transform: translateY(calc(70px * 1));
+    background: rgb(235, 106, 106);
+}
+.navegacion ul li:nth-child(3).active ~ .indicator{
+    transform: translateY(calc(70px * 2));
+    background: rgb(127, 127, 218);
+}
+.navegacion ul li:nth-child(4).active ~ .indicator{
+    transform: translateY(calc(70px * 3));
+    background: rgb(101, 179, 221);
+}
+.navegacion ul li:nth-child(5).active ~ .indicator{
+    transform: translateY(calc(70px * 4));
+    background: rgb(228, 178, 98);
+}
+
+.navegacion ul li:nth-child(6).active ~ .indicator{
+    transform: translateY(calc(70px * 5));
+    background: rgb(238, 36, 36);
+}
+
+
+
+/*botones */
+
+.button-Cocinando{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:0.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+
+.button-terminado{
+    background:#ac5e11;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:0.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    
+}
+
+
+
+
+.button-Cocinando:hover{
+    background:#fff;
+    color:#1AAB8A;
+}
+
+.button-terminado:hover{
+    background:#fff;
+    color:#c77b1e;
+}
+
+button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+}
+
+button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+
+/*   notificacion */
+
+.notificacion {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    transition: 0.5s;
+
+ }
+
+
+
+.navegacion ul li.active a .notificacion{
+    transform: translateX(55px);
+}
